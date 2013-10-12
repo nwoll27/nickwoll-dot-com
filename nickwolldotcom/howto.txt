@@ -1,0 +1,16 @@
+Taken from the spoongraphics blog:
+
+
+
+header.php - Contains everything you'd want to appear at the top of your site.
+index.php - The core file that loads your theme, also acts as the homepage (unless you set your blog to display a static page).
+sidebar.php - Contains everything you'd want to appear in a sidebar.
+footer.php - Contains everything you'd want to appear at the bottom of your site.
+archive.php - The template file used when viewing categories, dates, posts by author, etc.
+single.php - The template file that's used when viewing an individual post.
+comments.php - Called at the bottom of the single.php file to enable the comments section.
+page.php - Similar to single.php, but used for WordPress pages.
+search.php - The template file used to display search results.
+404.php - The template file that displays when a 404 error occurs.
+style.css - All the styling for your theme goes here.
+functions.php - A file that can be used to configure the WordPress core, without editing core files.

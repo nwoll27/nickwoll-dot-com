@@ -1,4 +1,5 @@
 nickwoll-dot-com
 ================
 
-My portfolio website, nickwoll dot com
+A custom wordpress theme for my portfolio website, nickwoll{dot}com
+

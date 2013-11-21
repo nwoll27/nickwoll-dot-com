@@ -3,6 +3,89 @@ html{
 }
 
 body{
+	height:100%;
 	min-height:100%;
-	background-color:lemonchiffon;
+	background-color:#fff;
+}
+
+header{
+	height: 230px;
+	background-color: orange;
+}
+
+footer {
+    height: 200px;
+    background-color: #220e10;
+}
+
+.push {
+    height: 200px;
+    clear: both;
+}
+
+#sidebar ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+#sidebar li{
+	background-color: #f7f5e7;
+	display: block;
+	text-align: center;
+}
+
+#sidebar li a{
+	display: block;
+	color: #141412;
+	font-size: 15px;
+	line-height: 1;
+	padding: 15px 0px;
+	text-decoration: none;
+}
+
+#sidebar li:hover{
+	background-color: #220e10;	
+}
+
+#sidebar li a:hover{
+	color: #f7f5e7;
+}
+
+#page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+    position: relative
+}
+
+#content {
+    height: 100%;
+}
+
+#main {
+    margin-left: 255px;
+}
+
+#footer-content {
+    border: 1px solid magenta;
+    color: #f7f5e7;
+    height: 182px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px;
+}
+
+#header-content {
+    border: 1px solid magenta;
+    height: 212px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px;
+}
+
+#sidebar {
+    border: 1px solid skyblue;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 230px;
+    bottom: 200px;
+    background-color: #f7f5e7;
 }

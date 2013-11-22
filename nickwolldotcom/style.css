@@ -2,10 +2,16 @@ html{
 	height:100%;
 }
 
-body{
+body, #site{
 	height:100%;
 	min-height:100%;
 	background-color:#fff;
+}
+
+#site{
+	max-width:1600px;
+	margin: 0px auto;
+	border-right: 1px solid #f2f2f2;
 }
 
 header{
@@ -23,13 +29,22 @@ footer {
     clear: both;
 }
 
+#sidebar {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 230px;
+    bottom: 200px;
+    background-color: #e8e5ce;
+}
+
 #sidebar ul{
 	margin: 0px;
 	padding: 0px;
 }
 
 #sidebar li{
-	background-color: #f7f5e7;
+	background-color: #e8e5ce;
 	display: block;
 	text-align: center;
 }
@@ -68,24 +83,12 @@ footer {
 }
 
 #footer-content {
-    border: 1px solid magenta;
     color: #f7f5e7;
-    height: 182px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    height: 184px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
     padding: 8px;
 }
 
 #header-content {
-    border: 1px solid magenta;
-    height: 212px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    height: 214px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
     padding: 8px;
-}
-
-#sidebar {
-    border: 1px solid skyblue;
-    width: 250px;
-    position: absolute;
-    left: 0;
-    top: 230px;
-    bottom: 200px;
-    background-color: #f7f5e7;
 }

@@ -37,30 +37,27 @@
 						</li>
 					</ul>
 				</nav>
-				<div id="main">
-					<span class="grid-column">
-						<a href="">
-							<div class="grid-entry">
-								<img class="grid-post-thumbnail" alt="" src="">
-								<div class="grid-post-title">getDB!</div>
-							</div>
-						</a>
-						<div class="grid-entry"></div>						
-						<div class="grid-entry"></div>						
-						<div class="grid-entry"></div>
-					</span>
-					<span class="grid-column">
-						<div class="grid-entry">
-							<div class="grid-post-title">getDB!</div>
-						</div>
-						<div class="grid-entry"></div>						
-						<div class="grid-entry"></div>
-					</span>
-					<span class="grid-column">
-						<div class="grid-entry"></div>
-						<div class="grid-entry"></div>
-						<div class="grid-entry"></div>
-					</span>
+				<div id="main">	
+					<ul id="Grid">			
+						<script>
+							var numEntries = 13;
+							var gridentry =					
+								"\n<li>"
+								+	"\n<a class=\"grid-entry\" href=\"\">"
+								+		"\n<div class=\"grid-post-title\">getDB!</div>"
+								+		"\n<div class=\"grid-post-thumbnail\">"
+								+			"\n<img src=\"http://www.barrelny.com/wp-content/uploads/work_postable_cover.jpg\">"
+								+		"\n</div>"
+								+	"\n</a>"
+								+"\n</li>"
+							for(var i=0; i<=numEntries;i++){
+								document.write(gridentry);
+							}
+						</script>
+						<li class="placeholder"></li>
+						<li class="placeholder"></li>
+						<li class="placeholder"></li>
+					</ul>
 				</div>
 		    </div>
 		    <div class="push"></div>

@@ -63,7 +63,7 @@ body, #site{
 /*1.2 Header*/
 header{
 	height: 230px;
-	background-color: darkorange;
+	background-color: #e6402a;
 }
 
 h1,
@@ -85,7 +85,6 @@ h6 {
 	min-height: 230px;
 	padding: 0 20px;
 	text-decoration: none;
-	width: 100%;
 }
 
 .site-title {
@@ -166,8 +165,45 @@ footer {
 
 #footer-content {
     color: #f7f5e7;
-    height: 184px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
-    padding: 8px;
+    max-width: 1400px;
+    margin: 0px auto;
+    height: 183px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px 20px;
+    text-align:justify;
+}
+
+footer .Grid {
+	margin: 0px;
+}
+
+footer .widget {
+	position:relative;
+	background: transparent;
+	color: #fff;
+	float: left;
+	padding: 20px;
+	margin-right: 20px;
+	width: 245px;
+	font-size: 14px;
+}
+
+footer .widget-title {
+	margin: 0px 0px 10px;
+	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+}
+
+footer .widget ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+footer .widget li {
+	padding: 5px 0px;
+}
+
+footer .widget a {
+	color: #e6402a;
 }
 
 /**
@@ -175,14 +211,14 @@ footer {
  * ----------------------------------------------------------------------------
  */
 /*2.X Flexgrid*/
-#Grid{
+.Grid{
   margin-bottom: 40px;
   text-align: justify;
   font-size: 0.1px;
   line-height: 0;
 }
 
-#Grid li{
+.Grid li{
   display: inline-block;
   background: #eee;
   width: 18%;
@@ -234,14 +270,14 @@ footer {
 	left:-200px;
 }
 
-#Grid:after{
+.Grid:after{
   content: '';
   display: inline-block;
   width: 100%;
   border-top: 10px dashed #922d8d; /* Border added to make element visible for demonstration purposes */
 }
  
-#Grid .placeholder{
+.Grid .placeholder{
   padding: 0;
   border-top: 10px solid #922d8d; /* Border added to make element visible for demonstration purposes */
 }
@@ -252,7 +288,7 @@ footer {
 
 @media (max-width: 1300px){
 
-  #Grid li{
+  #content .Grid li{
     width: 23%;
     max-width: 23%;
     margin-bottom: 2.5%;
@@ -262,7 +298,7 @@ footer {
 /* 3 COL */
 
 @media (max-width: 1150px){
-  #Grid li{
+  #content .Grid li{
     width: 31%;
     max-width: 31%;
     margin-bottom: 3%;
@@ -272,7 +308,7 @@ footer {
 /* 2 COL */
 
 @media (max-width: 900px){
-  #Grid li{
+  #content .Grid li{
     width: 48%;
     max-width: 48%;
     margin-bottom: 4%;
@@ -282,7 +318,7 @@ footer {
 /* SINGLE COL */
 
 @media (max-width: 650px){
-  #Grid li{
+  #content .Grid li{
     width: 100%;
     max-width: 100%;
     margin-bottom: 5%;

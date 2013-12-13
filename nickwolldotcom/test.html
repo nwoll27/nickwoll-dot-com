@@ -5,21 +5,22 @@
 	<title>nickwoll{dot}com | Just another WordPress site</title>
 	<link rel="stylesheet" href="normalize.min.css"/>
 	<link rel="stylesheet" href="style.css"/>
+	<!-- <link rel="stylesheet" id="bitter-fonts-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all"> -->
 </head>
 <body>
 	<div id="site">
 		<div id="page">
-			<header role="banner">
+			<header class="site-header" role="banner">
 				<div id="header-content">					
 					<a class="home-link" href="" title="nickwoll{dot}com" rel="home">
 						<h1 class="site-title">nickwoll{dot}com</h1>
 						<h2 class="site-description">Description</h2>
 					</a>
 					<div id="icon-box">
-						<a href=""><img src="facebook-square-color@2x.png"/></a>
-						<a href=""><img src="blogger-square-color@2x.png"/></a>
-						<a href=""><img src="github-square-color@2x.png"/></a>
-						<a href=""><img src="linkedin-square-color@2x.png"/></a>					
+						<a href="http://www.facebook.com"><img src="facebook-square-color@2x.png"/></a>
+						<a href="http://www.blogger.com"><img src="blogger-square-color@2x.png"/></a>
+						<a href="http://www.github.com"><img src="github-square-color@2x.png"/></a>
+						<a href="http://www.linkedin.com"><img src="linkedin-square-color@2x.png"/></a>					
 					</div>
 				</div>
 			</header>	
@@ -27,16 +28,16 @@
 		        <nav id="sidebar">
 					<ul>
 						<li>
-						<a href="">LINK</a>
+						<a href="">Projects</a>
 						</li>
 						<li>
-						<a href="">LINK</a>
+						<a href="">About</a>
 						</li>
 						<li>
-						<a href="">LINK</a>
+						<a href="">Resume</a>
 						</li>
 						<li>
-						<a href="">LINK</a>
+						<a href="">Contact</a>
 						</li>
 						<li>
 						<a href="">LINK</a>
@@ -46,7 +47,7 @@
 				<div id="main">	
 					<ul class="Grid">			
 						<script>
-							var numEntries = 13;
+							var numEntries = 6;
 							var gridentry =					
 								"\n<li class=\"li-item\">"
 								+	"\n<a class=\"grid-entry\" href=\"\">"
@@ -64,6 +65,19 @@
 						<li class="li-item placeholder"></li>
 						<li class="li-item placeholder"></li>
 					</ul>
+					<article class="post">
+						<header class="entry-header">
+							<h1 class="entry-title">Worth A Thousand Words</h1>
+							<div class ="entry-meta"></div>
+						</header>
+						<div class="entry-content">
+							<div style="width: 445px" class="wp-caption alignnone">
+								<img class="wp-image-59" alt="Boat" src="http://wpdotorg.files.wordpress.com/2008/11/boat.jpg" width="435" height="288">
+								<p class="entry-caption">Boat</p>
+							</div>
+							<p>Boat. <a href="">Boat.</a></p>
+						</div>
+					</article>
 				</div>
 		    </div>
 		    <div class="push"></div>
@@ -74,7 +88,7 @@
 					<li class="li-item">
 						<aside class="grid-entry">
 							<div class="widget">
-								<h3 class="widget-title">Title</h3>
+								<h3 class="widget-title">Navigation</h3>
 								<ul>
 									<li>
 									<a href="">LINK</a>
@@ -98,7 +112,7 @@
 					<li class="li-item">
 						<aside class="grid-entry">
 							<div class="widget">
-								<h3 class="widget-title">Title</h3>
+								<h3 class="widget-title">Projects</h3>
 								<ul>
 									<li>
 									<a href="">LINK</a>
@@ -125,16 +139,16 @@
 								<h3 class="widget-title">Social</h3>
 								<ul>
 									<li>
-									<a href="">Github</a>
+									<a href="http://www.github.com">Github</a>
 									</li>
 									<li>
-									<a href="">LinkedIn</a>
+									<a href="http://www.linkedin.com">LinkedIn</a>
 									</li>
 									<li>
-									<a href="">Facebook</a>
+									<a href="http://www.facebook.com">Facebook</a>
 									</li>
 									<li>
-									<a href="">Blogger</a>
+									<a href="http://www.blogger.com">Blogger</a>
 									</li>
 								</ul>
 							</div>
@@ -143,9 +157,10 @@
 					<li class="li-item">
 						<aside class="grid-entry">
 							<div class="widget">
-								<h3 class="widget-title">About</h3>
-								<p>This site was created by Nick Woll. Nick Woll is a software developer from 
-								Orlando, Florida in the center of America's wang.
+								<h3 class="widget-title">About This Site</h3>
+								<p>This site is developed, administered, and maintained by Nick Woll. The static version of this site is written in HTML5 and CSS3 and is hosted on S3 cloud storage provided by <a href="http://aws.amazon.com/">Amazon Web Services</a>.</p>
+								<!-- <p>The dynamic version of this site was developed using PHP and Wordpress, and is hosted using an Apache Webserver located on an Amazon EC2 instance.</p>  -->
+								<p>The assets for this site are located on <a href="http://www.github.com">my Github profile</a>.
 							</div>
 						</aside>
 					</li>

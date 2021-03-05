@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>nickwoll{dot}com | Developer, Designer, Dungeon Master</title>
+	<link rel="stylesheet" href="normalize.min.css"/>
+	<link rel="stylesheet" href="style.css"/>
+	<!-- <link rel="stylesheet" id="bitter-fonts-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all"> -->
+</head>
+<body>
+	<div id="site">
+		<div id="page">
+			<header class="site-header" role="banner">
+				<div id="header-content">					
+					<a class="home-link" href="index.html" title="nickwoll{dot}com" rel="home">
+						<h1 class="site-title">nickwoll{dot}com</h1>
+						<h2 class="site-description">Developer, Designer, Dungeon Master</h2>
+					</a>
+					<div id="icon-box">
+						<a href="https://www.facebook.com/nwoll27"><img src="assets/facebook-64.png" alt="Facebook Profile"/></a>
+						<a href="http://www.linkedin.com/pub/nick-woll/37/87b/8b8"><img src="assets/linkedin-64.png" alt="LinkedIn Profile"/></a>					
+						<a href="https://github.com/nwoll27"><img src="assets/git-64.png" alt="Github Profile"/></a>
+						<a href="https://twitter.com/YourDMNick"><img src="assets/twitter-64.png" alt="Twitter @YourDMNick"/></a>
+						<a href="https://www.twitch.tv/yourdmnick"><img src="assets/twitch-64.png" alt="Twitch @YourDMNick"/></a>
+					</div>
+				</div>
+			</header>	
+			<div id="content">
+				<nav id="sidebar">
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<div id="main">
+					<article class="post">
+						<header class="entry-header">
+							<h1 class="entry-title">PortChecker</h1>
+							<div class ="entry-meta">
+								<a href="https://github.com/nwoll27/PortChecker">View Source</a>
+								<a href="https://github.com/nwoll27/PortChecker/releases/tag/v1.0">Download</a>
+							</div>
+						</header>
+						<div class="entry-content">							
+							<div class="bannerimg landscape aligncenter">
+								<a href="https://github.com/nwoll27/PortChecker">
+									<img src="assets/portcheck1.jpg" alt="Screenshot of Port Checker threads"/>
+								</a>
+							</div>
+
+							<p>PortChecker is a simple multi-threaded TCP Port Checker
+								utility written in Java and executed from a batch file or the
+								command line.</p>
+
+							<div class="postimg landscape wp-caption alignright">
+								<img src="assets/portcheck2.jpg" alt="Screenshot of Port Checker output" />
+								<p class="entry-caption">The output file shows open and
+									closed ports separately.</p>
+							</div>
+
+							<p>The application accepts a .csv file (or a set of arguments
+								provided via the command line) containing a list of IP addresses
+								and TCP ports. The application parses these ports and constructs
+								a table of ports and IP addresses, which is then passed to a
+								thread controller. The thread controller splits the contents of
+								the table into "chunks" and then creates new threads and manages
+								the distribution of chunks to idle threads, which then attempt
+								to test whether a port is open by opening a new socket with the
+								target IP.</p>
+
+							<p>The multi-threaded aspect of this application allows for
+								hundreds of ports to be tested within seconds, and the results
+								are output to a text file for review. Additional improvements
+								may improve the readability of the program output and provide a
+								more user-friendly interface.</p>
+							<p>
+								The whole project can be viewed on <a
+									href="https://github.com/nwoll27/PortChecker">PortChecker's
+									project page</a> on Github. Alternately, the compiled binaries,
+								along with accompanying source files, can be downloaded from the
+								<a
+									href="https://github.com/nwoll27/PortChecker/releases/tag/v1.0">PortChecker
+									v1.0 release page</a>.
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="push"></div>
+		</div>
+		<footer>
+			<div id="footer-content">
+				<ul class="Grid">
+					<li class="li-item">
+						<aside class="grid-entry">
+							<div class="widget">
+								<h3 class="widget-title">Navigation</h3>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="projects.html">Projects</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</aside>
+					</li>
+					<li class="li-item">
+						<aside class="grid-entry">
+							<div class="widget">
+								<h3 class="widget-title">Projects</h3>
+								<ul>
+									<li><a href="proj_getDB.html">getDB!</a></li>
+									<li><a href="proj_portchecker.html">PortChecker</a></li>
+									<li><a href="proj_nickwolldotcom.html">nickwoll{dot}com</a></li>
+									<li><a href="proj_oocards.html">OOCards</a></li>
+								</ul>
+							</div>
+						</aside>
+					</li>
+					<li class="li-item">
+						<aside class="grid-entry">
+							<div class="widget">
+								<h3 class="widget-title">Social</h3>
+								<ul>
+									<li>
+									<a href="https://www.facebook.com/nwoll27">Facebook</a>
+									</li>
+									<li>
+									<a href="https://github.com/nwoll27">Github</a>
+									</li>
+									<li>
+									<a href="http://www.linkedin.com/pub/nick-woll/37/87b/8b8">LinkedIn</a>
+									</li>
+									<li>
+									<a href="https://twitter.com/YourDMNick">Twitter</a>
+									</li>
+									<li>
+									<a href="https://www.twitch.tv/yourdmnick">Twitch</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</li>
+					<li class="li-item">
+						<aside class="grid-entry">
+							<div class="widget">
+								<h3 class="widget-title">About This Site</h3>
+								<p>
+									This site is developed, administered, and maintained by Nick
+									Woll. The static version of this site is written in HTML5 and
+									CSS3 and is hosted on S3 cloud storage provided by <a
+										href="http://aws.amazon.com/">Amazon Web Services</a>.
+								</p>
+								<!-- <p>The dynamic version of this site was developed using PHP and Wordpress, and is hosted using an Apache Webserver located on an Amazon EC2 instance.</p>  -->
+								<p>
+									The assets for this site are located on <a
+										href="https://github.com/nwoll27/nickwoll-dot-com">my
+										Github profile</a>.
+							</div>
+						</aside>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

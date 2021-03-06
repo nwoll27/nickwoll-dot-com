@@ -1,0 +1,549 @@
+/*
+Theme Name: nickwolldotcom
+Author: Nicholas Woll <nwoll27>
+Author URI: http: //www.nickwoll.com
+Description: The theme for my developer portfolio at www.nickwoll.com, derived from Wordpress' twentythirteen theme. 
+Version: 1.0 (BETA)
+License: --
+License URI: --
+Tags: --
+Text Domain: --
+*/
+
+/**
+ * Table of Contents: 
+ *
+ * 1.0 - Basic Layout
+ * ...1.1 - Foundation
+ * ...1.2 - Header
+ * ...1.3 - Body
+ * ...1.4 - Sidebar
+ * ...1.5 - Footer
+ * 2.0 - Grid Pages
+ * 3.0 - Post Pages
+ * 4.0 - Utility
+ * x.0 - Media Queries
+ * 
+ */
+
+/**
+ * 1.0 Basic Layout
+ * ----------------------------------------------------------------------------
+ */
+/*1.1 Foundation*/
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter-Regular'), url(http://themes.googleusercontent.com/static/fonts/bitter/v5/s9gJB935qk_YG8d-lnTdvA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Bitter-Bold'), url(http://themes.googleusercontent.com/static/fonts/bitter/v5/JGVZEP92dXgoQBG1CnQcfD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+html{
+	height: 100%;
+	overflow-y:scroll;
+}
+
+div,ul,li{
+	margin: 0px;
+	padding: 0px;
+	list-style-type:none;
+}
+
+body, #site{
+	height: 100%;
+	min-height: 100%;
+	background-color: #fff;
+}
+
+h1{
+	font-size: 48px;
+}
+
+#site{
+	max-width: 1600px;
+	margin: 0px auto;
+	border-right: 1px solid #f2f2f2;
+}
+
+#page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+    position: relative
+}
+
+#content {
+    height: 100%;
+}
+
+/*1.2 Header*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: Bitter, Georgia, serif;
+	line-height: 1.3;
+}
+
+.site-header{
+	height: 230px;
+	background-color: #FFB347;
+	background: linear-gradient(to bottom, #FFB347 0%, #FF753A 80%);
+}
+
+.home-link{
+	color: #141412;
+	display: block;
+	margin: 0 auto;
+	max-width: 1080px;
+	min-height: 230px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+.site-title {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+	padding: 58px 0 10px;
+}
+
+.site-title:HOVER {
+	text-decoration:underline;
+}
+
+.site-description {
+	font: 300 italic 24px "Source Sans Pro", Helvetica, sans-serif;
+	margin: 0;
+	padding-left: 2em;
+}
+
+#header-content {
+    height: 214px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px;
+}
+
+#icon-box {
+	position: absolute;
+	right: 0px;
+	background-color: white;
+	top: 170px;
+	height: 54px;
+	padding-right: 10px;
+	moz-border-bottom-left-radius: 10px;
+	moz-border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+#icon-box a {
+	float: left;
+	display: inline-block;
+	margin-top: 2px;	
+	margin-left: 10px;
+}
+
+#icon-box img {
+	width: 50px;
+	height: auto;
+}
+ 
+/*1.3 Body*/
+#main {
+	padding:20px;
+    margin-left: 255px;
+}
+ 
+/*1.4 Sidebar*/
+#sidebar {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 230px;
+    bottom: 200px;
+    background-color: #f7f5e7;
+    border-right-style: solid;
+    border-color: #e8e5ce;
+    border-width: 1px;
+}
+
+#sidebar ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+#sidebar li{
+	background-color: #f7f5e7;
+	display: block;
+	text-align: center;
+}
+
+#sidebar li a{
+	display: block;
+	color: #141412;
+	font-size: 20px;
+	line-height: 2;
+	padding: 15px 0px;
+	text-decoration: none;
+}
+
+#sidebar li:hover{
+	background-color: #220e10;	
+}
+
+#sidebar li a:hover{
+	color: #f7f5e7;
+}
+
+ 
+/*1.5 Footer*/
+footer {
+    height: 200px;
+    background-color: #220e10;
+}
+
+.push {
+    height: 200px;
+    clear: both;
+}
+
+#footer-content {
+    color: #f7f5e7;
+    max-width: 1400px;
+    margin: 0px auto;
+    height: 183px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px 40px;
+    text-align:justify;
+}
+
+footer .widget {
+	text-align: left;
+	line-height: normal;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+}
+
+footer .widget-title {
+	margin: 0px 0px 10px;
+	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+}
+
+footer .widget ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+footer .widget li {
+	padding: 5px 15px;
+}
+
+footer .widget a {
+	color: #e6402a;
+}
+
+/**
+ * 2.0 Grid Pages
+ * ----------------------------------------------------------------------------
+ */
+/*2.X Flexgrid*/
+.Grid{
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
+  line-height: 0;
+}
+
+.Grid .li-item{
+  display: inline-block;
+  background: #eee;
+  width: 23%;
+  max-width: 23%;
+  margin-bottom: 2%;
+}
+
+.grid-entry{
+	display: block;
+	position: relative;
+	padding-top:100%;
+	overflow:hidden; 
+}
+
+.grid-post-title{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	background-color: black;
+	opacity:0.75;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 10px 0px;
+	height: 20px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: white;
+	z-index: 2;
+}
+
+.grid-post-thumbnail{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	background-color: transparent;
+}
+
+.grid-post-thumbnail img{
+	width:auto;
+	height:100%;
+	top:0;
+	left:-200px;
+}
+
+footer .Grid {
+	margin: 0px;
+}
+
+footer .Grid .li-item{
+  display: inline-block;
+  background: transparent;
+  width: 22%;
+  max-width: 22%;
+  margin-bottom: 0%;
+}
+
+footer .grid-entry{
+	display: block;
+	position: relative;
+	padding-top:183px;
+	overflow:hidden; 
+}
+
+.Grid:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+  /*border-top: 10px dashed #922d8d; /* Border added to make element visible for demonstration purposes */
+}
+ 
+.Grid .placeholder{
+  padding: 0;
+  /*border-top: 10px solid #922d8d; /* Border added to make element visible for demonstration purposes */
+}
+
+/**
+ * 3.0 Post Pages
+ * ----------------------------------------------------------------------------
+ */
+/*3.X Post Layout*/
+#main .post{
+	padding: 40px 0px;
+	min-width:300px;
+}
+
+.entry-header, .entry-content, .entry-summary, .entry-meta {
+	margin: 0px auto;
+	max-width: 900px;
+	width: 100%;
+}
+
+.post .entry-header{
+	margin-bottom:30px;
+}
+
+
+.entry-title{
+	font-weight: normal;
+	margin: 0px 0px 5px;
+}
+
+.entry-meta{
+	clear: both;
+	font-size: 14px;
+}
+
+.entry-meta a{
+	color: #bc360a;
+}
+
+.entry-content{
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+}
+
+.entry-caption {
+color: #220e10;
+font-size: 14px;
+font-style: italic;
+font-weight: 300;
+margin: 0px;
+}
+
+.entry-content a,
+.comment-content a {
+	color: #bc360a;
+}
+
+.entry-content a:hover,
+.comment-content a:hover {
+	color: #ea9629;
+}
+
+.entry-content blockquote {
+	font-size: 24px;
+}
+
+.entry-content blockquote cite,
+.entry-content blockquote small {
+	font-size: 16px;
+}
+
+.entry-content img.alignleft,
+.entry-content .wp-caption.alignleft {
+	margin-left: 0px;
+}
+
+.entry-content img.alignright,
+.entry-content .wp-caption.alignright {
+	margin-right: 0px;
+}
+
+/**
+ * 4.0 - Utility
+ * ----------------------------------------------------------------------------
+ */
+/*4.1 Image Styling*/
+
+div.bannerimg{
+	width:80%;	
+}
+
+div.postimg{
+	max-width:50%;
+	min-width:200px;
+	overflow:hidden;
+	padding:0px 5px 0px 5px;
+}
+
+.postimg.small.landscape{
+	max-width: 40%;		
+}
+
+.postimg.small.portrait{
+	max-width: 20%;
+}
+
+.postimg img, .bannerimg img{
+	width:100%;
+	height:auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignleft {
+	margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 15px 10px 15px 0;
+}
+
+img.alignright {
+	margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
+
+/**
+ * X.0 - Media Queries for Responsive Layouts
+ * ----------------------------------------------------------------------------
+ */
+/*X.1 Content Grid Layout*/
+/* 4 COL */
+
+@media (max-width: 1300px){
+
+  #content .Grid li{
+    width: 23%;
+    max-width: 23%;
+    margin-bottom: 2.5%;
+  }
+}
+
+/* 3 COL */
+
+@media (max-width: 1150px){
+  #content .Grid li{
+    width: 31%;
+    max-width: 31%;
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 900px){
+  #content .Grid li{
+    width: 48%;
+    max-width: 48%;
+    margin-bottom: 4%;
+  }
+}
+
+/* SINGLE COL */
+
+@media (max-width: 650px){
+  #content .Grid li{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+}

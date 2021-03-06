@@ -4,139 +4,90 @@
 	<meta charset="UTF-8">
 	<title>nickwoll{dot}com | Developer, Designer, Dungeon Master</title>
 	<link rel="stylesheet" href="normalize.min.css"/>
-	<link rel="stylesheet" href="style.css"/>
-	<!-- <link rel="stylesheet" id="bitter-fonts-css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all"> -->
+	<link rel="stylesheet" href="style.min.css"/>
 </head>
 <body>
-	<div id="site">
-		<div id="page">
-			<header class="site-header" role="banner">
-				<div id="header-content">					
-					<a class="home-link" href="index.html" title="nickwoll{dot}com" rel="home">
-						<h1 class="site-title">nickwoll{dot}com</h1>
-						<h2 class="site-description">Developer, Designer, Dungeon Master</h2>
-					</a>
-					<div id="icon-box">
-						<a href="https://www.facebook.com/nwoll27"><img src="assets/facebook-64.png" alt="Facebook Profile"/></a>
-						<a href="http://www.linkedin.com/pub/nick-woll/37/87b/8b8"><img src="assets/linkedin-64.png" alt="LinkedIn Profile"/></a>					
-						<a href="https://github.com/nwoll27"><img src="assets/git-64.png" alt="Github Profile"/></a>
-						<a href="https://twitter.com/YourDMNick"><img src="assets/twitter-64.png" alt="Twitter @YourDMNick"/></a>
-						<a href="https://www.twitch.tv/yourdmnick"><img src="assets/twitch-64.png" alt="Twitch @YourDMNick"/></a>
-					</div>
-				</div>
-			</header>	
-		    <div id="content">
-		        <nav id="sidebar">
-					<ul>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="projects.html">Projects</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</nav>
-				<div id="main">	
-					<article class="post">
-						<header class="entry-header">
-							<h1 class="entry-title">Welcome!</h1>
-							<div class ="entry-meta"></div>
-						</header>
-						<div class="entry-content">
-							<p>Welcome to the home of Nick Woll. This site serves as the hub for my web presence and as a showcase for my software development portfolio. I'll try to update this site as I undertake new projects.</p>
-							<p>To get started, click a link on the sidebar. You can find out more about me on the About page or via the social media links in the site header and footer. To find out more about about this site - or to take a look at my portfolio - click the Projects link.</p>
-							<p>Thanks!</p>							
-						</div>
-					</article>
-				</div>
-		    </div>
-		    <div class="push"></div>
-		</div>
+	<main>
+		<header role="banner">
+			<div class="content">
+				<img class="logo" src="./assets/logo.svg"/>
+				<p class="tagline">Developer // Designer // Dungeon Master</p>
+			</div>
+		</header>
+
+		<h1 id="welcome" class="section-header">Hello! My name is <mark class="primary">Nick</mark>. I'm a <mark class="primary">software engineer</mark>.</h1>
+
+		<section class="selfie">
+			<img src="./assets/portrait_round.png"/>
+		</section>
+
+		<section class="summary">
+			<p>
+				I currently work at <mark class="secondary">Electronic Arts</mark> delivering genre-defining live services with Madden Mobile. <mark class="secondary">I’m a generalist engineer</mark> who enjoys architecting new systems and guiding junior engineers in their development.
+			</p>
+			<p>
+				With over eight years of experience in video games and enterprise software, I bring an <mark class="secondary">eye for detail</mark> and a <mark class="secondary">passion for design</mark> to my work.
+			</p> 
+		</section>
+
+		<section class="proficiency">
+			<h1 class="section-header">Proficiencies</h1>
+			<div class="icons first">
+				<img src="./assets/devicon/bitbucket.svg" alt="Bitbucket"/>
+				<img src="./assets/devicon/cpp.svg" alt="C Plus Plus"/>
+				<img src="./assets/devicon/cs.svg" alt="C-Sharp"/>
+				<img src="./assets/devicon/css3.svg" alt="CSS 3"/>
+				<img src="./assets/devicon/git.svg" alt="Git"/>
+			</div>
+			<div class="icons">
+				<img src="./assets/devicon/haxe.svg" alt="Haxe"/>
+				<img src="./assets/devicon/html5.svg" alt="HTML 5"/>
+				<img src="./assets/devicon/java.svg" alt="Java"/>
+				<img src="./assets/devicon/javascript.svg" alt="JavaScript"/>
+				<img src="./assets/devicon/mysql.svg" alt="MySQL"/>
+			</div>
+			<div class="icons">
+				<img src="./assets/devicon/redis.svg" alt="Redis"/>
+				<img src="./assets/devicon/sourcetree.svg" alt="SourceTree"/>
+				<img src="./assets/devicon/tomcat.svg" alt="Apache Tomcat"/>
+				<img src="./assets/devicon/trello.svg" alt="Trello"/>
+				<img src="./assets/devicon/visualstudio.svg" alt="Visual Studio"/>
+			</div>
+		</section>
+
+		<section class="personal">
+			<h1 class="section-header">I'm a <mark class="primary">collaborator</mark>.</h1>
+			<p>
+				Making games isn’t easy. Fortunately, I’ve been lucky enough to work with some <mark class="secondary">incredible teams</mark>.
+			</p>
+			<p>
+				I pride myself on my <mark class="secondary">design-sense</mark> and my ability to <mark class="secondary">build bridges</mark> between different disciplines to turn a vision into a finished product.
+			</p> 
+			<div class="contact">
+				<span class="primary">Contact Me: </span>
+				<img src="./assets/email.svg"/>
+			</div>
+		</section>
+
 		<footer>
-			<div id="footer-content">
-				<ul class="Grid">
-					<li class="li-item">
-						<aside class="grid-entry">
-							<div class="widget">
-								<h3 class="widget-title">Navigation</h3>
-								<ul>
-									<li>
-										<a href="index.html">Home</a>
-									</li>
-									<li>
-										<a href="about.html">About</a>
-									</li>
-									<li>
-										<a href="projects.html">Projects</a>
-									</li>
-									<li>
-										<a href="contact.html">Contact</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-					</li>
-					<li class="li-item">
-						<aside class="grid-entry">
-							<div class="widget">
-								<h3 class="widget-title">Projects</h3>
-								<ul>
-									<li>
-										<a href="proj_getDB.html">getDB!</a>
-									</li>
-									<li>
-										<a href="proj_portchecker.html">PortChecker</a>
-									</li>
-									<li>
-										<a href="proj_nickwolldotcom.html">nickwoll{dot}com</a>
-									</li>
-									<li>
-										<a href="proj_oocards.html">OOCards</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-					</li>
-					<li class="li-item">
-						<aside class="grid-entry">
-							<div class="widget">
-								<h3 class="widget-title">Social</h3>
-								<ul>
-									<li>
-									<a href="https://www.facebook.com/nwoll27">Facebook</a>
-									</li>
-									<li>
-									<a href="https://github.com/nwoll27">Github</a>
-									</li>
-									<li>
-									<a href="http://www.linkedin.com/pub/nick-woll/37/87b/8b8">LinkedIn</a>
-									</li>
-									<li>
-									<a href="https://twitter.com/YourDMNick">Twitter</a>
-									</li>
-									<li>
-									<a href="https://www.twitch.tv/yourdmnick">Twitch</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-					</li>
-					<li class="li-item">
-						<aside class="grid-entry">
-							<div class="widget">
-								<h3 class="widget-title">About This Site</h3>
-								<p>This site is developed, administered, and maintained by Nick Woll. The static version of this site is written in HTML5 and CSS3 and is hosted on S3 cloud storage provided by <a href="http://aws.amazon.com/">Amazon Web Services</a>.</p>
-								<!-- <p>The dynamic version of this site was developed using PHP and Wordpress, and is hosted using an Apache Webserver located on an Amazon EC2 instance.</p>  -->
-								<p>The assets for this site are located on <a href="https://github.com/nwoll27/nickwoll-dot-com">my Github profile</a>.
-							</div>
-						</aside>
-					</li>
-				</ul>				
+			<p class="about">
+				This site was prototyped using <a href="https://www.figma.com/">Figma</a> and is hosted on S3 cloud storage provided by <a href="http://aws.amazon.com/">Amazon Web Services</a>.
+			</p>
+			<p class="attribution">
+				Social icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>.
+				<br/>
+				Proficiency icons provided by <a href="https://devicon.dev/">devicon.dev</a>.
+			</p>
+			<div class="social">
+				<div class="icons">
+					<a href="http://www.linkedin.com/pub/nick-woll/37/87b/8b8"><img class="first" src="./assets/social/linkedin.svg" alt="LinkedIn Profile"/></a>
+					<a href="https://github.com/nwoll27"><img src="./assets/social/github.svg" alt="Github Profile"/></a>
+					<a href="https://twitter.com/YourDMNick"><img src="./assets/social/twitter.svg" alt="Twitter @YourDMNick"/></a>
+					<a href="https://www.twitch.tv/yourdmnick"><img src="./assets/social/twitch.svg" alt="Twitch @YourDMNick"/></a>
+				</div>
+				<a class="button primary" href="mailto:hello@nickwoll.com">Say Hello</a>
 			</div>
 		</footer>
-	</div>	
+	</main>	
 </body>
 </html>

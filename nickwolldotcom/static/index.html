@@ -7,17 +7,87 @@
 	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-	<div id="site">
-		<div id="page">
-			<header class="site-header" role="banner">
-			</header>	
-		    <div id="content">
+	<main>
+		<header role="banner">
+			<div class="content">
+				<img class="logo" src="./assets/logo.svg"/>
+				<p class="tagline">Developer // Designer // Dungeon Master</p>
 			</div>
-		</div>
+		</header>
+
+		<h1 id="welcome" class="section-header">Hello! My name is <mark class="primary">Nick</mark>. I'm a <mark class="primary">software engineer</mark>.</h1>
+
+		<section class="selfie">
+			<img src="./assets/portrait_round.png"/>
+		</section>
+
+		<section class="summary">
+			<p>
+				I currently work at <mark class="secondary">Electronic Arts</mark> delivering genre-defining live services with Madden Mobile. <mark class="secondary">I’m a generalist engineer</mark> who enjoys architecting new systems and guiding junior engineers in their development.
+			</p>
+			<p>
+				With over eight years of experience in video games and enterprise software, I bring an <mark class="secondary">eye for detail</mark> and a <mark class="secondary">passion for design</mark> to my work.
+			</p> 
+		</section>
+
+		<section class="proficiency">
+			<h1 class="section-header">Proficiencies</h1>
+			<div class="icons first">
+				<img src="./assets/devicon/bitbucket.svg" alt="Bitbucket"/>
+				<img src="./assets/devicon/cpp.svg" alt="C Plus Plus"/>
+				<img src="./assets/devicon/cs.svg" alt="C-Sharp"/>
+				<img src="./assets/devicon/css3.svg" alt="CSS 3"/>
+				<img src="./assets/devicon/git.svg" alt="Git"/>
+			</div>
+			<div class="icons">
+				<img src="./assets/devicon/haxe.svg" alt="Haxe"/>
+				<img src="./assets/devicon/html5.svg" alt="HTML 5"/>
+				<img src="./assets/devicon/java.svg" alt="Java"/>
+				<img src="./assets/devicon/javascript.svg" alt="JavaScript"/>
+				<img src="./assets/devicon/mysql.svg" alt="MySQL"/>
+			</div>
+			<div class="icons">
+				<img src="./assets/devicon/redis.svg" alt="Redis"/>
+				<img src="./assets/devicon/sourcetree.svg" alt="SourceTree"/>
+				<img src="./assets/devicon/tomcat.svg" alt="Apache Tomcat"/>
+				<img src="./assets/devicon/trello.svg" alt="Trello"/>
+				<img src="./assets/devicon/visualstudio.svg" alt="Visual Studio"/>
+			</div>
+		</section>
+
+		<section class="personal">
+			<h1 class="section-header">I'm a <mark class="primary">collaborator</mark>.</h1>
+			<p>
+				Making games isn’t easy. Fortunately, I’ve been lucky enough to work with some <mark class="secondary">incredible teams</mark>.
+			</p>
+			<p>
+				I pride myself on my <mark class="secondary">design-sense</mark> and my ability to <mark class="secondary">build bridges</mark> between different disciplines to turn a vision into a finished product.
+			</p> 
+			<div class="contact">
+				<span class="primary">Contact Me: </span>
+				<img src="./assets/email.svg"/>
+			</div>
+		</section>
+
 		<footer>
-			<div id="footer-content">
+			<p id="about">
+				This site was prototyped using <a href="https://www.figma.com/">Figma</a> and is hosted on S3 cloud storage provided by <a href="http://aws.amazon.com/">Amazon Web Services</a>.
+			</p>
+			<p id="attribution">
+				Social icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>.
+				<br/>
+				Proficiency icons provided by <a href="https://devicon.dev/">devicon.dev</a>.
+			</p>
+			<div class="social">
+				<div class="icons">
+					<a href="http://www.linkedin.com/pub/nick-woll/37/87b/8b8"><img class="first" src="./assets/social/linkedin.svg" alt="LinkedIn Profile"/></a>
+					<a href="https://github.com/nwoll27"><img src="./assets/social/github.svg" alt="Github Profile"/></a>
+					<a href="https://twitter.com/YourDMNick"><img src="./assets/social/twitter.svg" alt="Twitter @YourDMNick"/></a>
+					<a href="https://www.twitch.tv/yourdmnick"><img src="./assets/social/twitch.svg" alt="Twitch @YourDMNick"/></a>
+				</div>
+				<a class="button primary" href="mailto:hello@nickwoll.com">Say Hello</a>
 			</div>
 		</footer>
-	</div>	
+	</main>	
 </body>
 </html>
